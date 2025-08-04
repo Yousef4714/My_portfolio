@@ -370,10 +370,10 @@ width:100%;
     .main h3{
         font-size: 1.4em;
     }  
-       .content{
+       /* .content{ */
         /* margin-right:15% ;  */
         /* overflow: hidden; */
-    } 
+    /* }  */
      .foot p{
     margin-right: 5%;
     padding: 5%;
