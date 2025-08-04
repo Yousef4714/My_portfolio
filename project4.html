@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: rgb(0, 0, 75);
+            display: flex;
+
+        }
+
+        .imgb {
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: solid 2px gray;
+            flex-shrink: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .profile h2 {
+            text-transform: capitalize;
+        }
+
+        .menu {
+            background-color: rgb(0, 0, 145);
+            width: 45px;
+            height: 100vh;
+            padding: 25px;
+            overflow: hidden;
+        }
+
+        .menu:hover {
+            background-color: rgb(0, 0, 145);
+            width: 250px;
+            height: 100vh;
+            padding: 25px;
+            transition: .8s;
+        }
+
+        ul {
+            list-style: none;
+            position: relative;
+            height: 95%;
+
+        }
+
+        li a {
+            /* background-color: transparent; */
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 9px;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            transition: .4s;
+        }
+
+        li a:hover,
+        .box:hover ,td:hover{
+            background-color: rgba(255, 255, 255, 0.166);
+
+        }
+
+        .home {
+            background-color: rgba(255, 255, 255, 0.166);
+            border-radius: 11px;
+
+        }
+
+        .logout {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+
+        }
+
+        .logout a:hover {
+            background-color: rgba(255, 0, 0, 0.705);
+        }
+
+        a {
+            font-size: 20px;
+        }
+
+        .content {
+            background-color: rgb(0, 0, 194);
+            width: 100%;
+            margin: 10px;
+        
+            /* flex-direction: column;
+            flex-grow: 1; */
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 5px 0;
+            padding: 22px;
+            font-size: larger;
+            font-weight: 600;
+            border-radius: 10px;
+            background-color: rgba(88, 197, 255, 0.43);
+        }
+
+        .datab {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            /* width:90%;
+        padding: 25px; 
+             margin: 20px;
+        font-size: xx-large; */
+
+        }
+
+        .box {
+            background-color: rgba(86, 86, 255, 0.246);
+            /* padding: 20px;
+            margin: 10px; */
+            border-radius: 10px;
+            width: 160px;
+            height: 160px;
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            font-size: 35px;
+        }
+
+        .data {
+            text-align: center;
+        }
+        table{
+         width: 100%;
+text-align: center;
+border-spacing: 8px;
+        }
+         th,td{
+            background-color:rgba(0, 0, 0, 0.494) ;
+        height:40px;
+        border-radius: 8px;
+        }
+        th{
+            background-color: rgba(33, 105, 169, 0.402);
+        }
+        .price , .count{
+    padding:9px;
+    border-radius: 6px;
+        }
+        .price{
+            background-color: rgba(0, 128, 0, 0.645);
+        }
+        .count{
+            background-color: gold;
+            color:black;
+        }
+         @media (max-width:980px){
+            .content{
+                display: flex;
+            }
+  .menu{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .title{
+  display: flex;
+    flex-grow: 1;
+  }
+  .datab{
+  display: flex;
+    flex-grow: 1;
+  }
+  .table{
+  display: flex;
+    flex-grow: 1;
+  }
+  .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+        } 
+    </style>
+    <title> dashboard | YousefAhmed</title>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li class></li>
+            <li class="profile">
+                <div class="imgb">
+                    <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?semt=ais_hybrid&w=740"
+                        alt="profile">
+                </div>
+                <h2>yousef ahmed</h2>
+            </li>
+            <li class="home">
+                <a href="#">
+                    <i class="fas fa-home"></i>
+                    <p> Home</p>
+                </a>
+            </li>
+            <li> <a href="#">
+                    <i class="fas fa-user-group"></i>
+                    <p> Clients</p>
+                </a></li>
+            <li> <a href="#">
+                    <i class="fas fa-table"></i>
+                    <p> Products</p>
+                </a></li>
+            <li> <a href="#">
+                    <i class="fas fa-chart-pie"></i>
+                    <p> Charts</p>
+                </a></li>
+            <li> <a href="#">
+                    <i class="fas fa-pen"></i>
+                    <p>Posts</p>
+                </a></li>
+            <li> <a href="#">
+                    <i class="fas fa-star"></i>
+                    <p>Favorites</p>
+                </a></li>
+            <li> <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <p> Settings</p>
+                </a></li>
+            <li class="logout"> <a href="#">
+                    <i class="fas fa-sign-out"></i>
+                    <p> Log out</p>
+                </a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="title">
+            <p>home</p> <i class="fas fa-chart-bar"></i>
+        </div>
+        <div class="datab">
+            <div class="box">
+                <i class="fas fa-user"></i>
+                <div class="data">
+                    <p>user</p><span>120</span>
+                </div>
+
+
+            </div>
+
+            <div class="box">
+                <i class="fas fa-pen"></i>
+                <div class="data">
+                    <p>sessions</p><span>24</span>
+                </div>
+
+
+            </div>
+
+            <div class="box">
+                <i class="fas fa-table"></i>
+                <div class="data">
+                    <p>days</p><span>34</span>
+                </div>
+
+
+            </div>
+
+            <div class="box">
+                <i class="fas fa-dollar"></i>
+                <div class="data">
+                    <p>revenue</p><span>0</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="title">
+            <p> Products </p> <i class="fas fa-table"></i>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                   
+                       <th> <p>product</p></th>
+                  
+                        <th><p>price</p></th>
+                  
+                        <th><p>count</p></th>
+                   
+                </tr> </thead>
+                <tbody>
+                <tr>
+                    <td> tv </td>
+                    <td ><span class="price"> 400$</span> </td>
+                    <td > <span class="count">67</span></td>
+                </tr>
+                  <tr>
+                    <td> labtop </td>
+                    <td ><span class="price"> 700$ </span></td>
+                    <td ><span class="count">109</span> </td>
+                </tr>  <tr>
+                    <td> phone </td>
+                    <td > <span class="price">500$ </span></td>
+                    <td ><span class="count"> 186</span></td>
+                </tr>  <tr>
+                    <td> ipad </td>
+                    <td ><span class="price"> 600$ </span></td>
+                    <td ><span class="count"> 97</span></td>
+                </tr>
+                  <tr>
+                    <td> cellphones </td>
+                    <td ><span class="price"> 50$ </span></td>
+                    <td ><span class="count"> 267</span></td>
+                </tr>
+           </tbody>
+        </table>
+
+
+    </div>
+</body>
+
+</html>

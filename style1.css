@@ -1,0 +1,736 @@
+/* class --> .   */
+/* id --> #  */
+/*block: new line / 100% of the parent / respect width and height  
+inline:no new line / fill content / doesnt respect width and height
+ display : inline-block  / inline / block
+colour: 
+  width:
+  height:
+ margin:
+ background: 
+ border:    
+ padding:
+ box-shadow: 
+text-shadow: 
+word-spacing:
+direction:
+border-radius: 
+font-style:italic/etc
+font-variant:
+font-weight:
+font-size:
+font-family:
+font: style variant weight size/line height family;
+white-space:
+word-wrap:
+text-align: center
+text-transform:capitalize
+letter-spacing:
+word-spacing:
+line-height:
+text-decoration: underline
+background-image:url()/linear-gradient()
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover contain 100% 
+background-origin:content/padding/border -box;
+background:;
+   2nd choice background-color:rgb(215, 234, 255);
+ background-image:url(https://img.freepik.com/free-vector/diamond-shape-golden-pattern-vector-background_1017-13783.jpg?semt=ais_hybrid&w=740);
+background-repeat: repeat; 
+  background:fixed url(https://images.ctfassets.net/nnkxuzam4k38/39sOStld2OCyNn3HmCpqco/21d339122a7cb417c83e6ebdc347ea5c/sea-edge-79ab30e2.png) no-repeat center/cover padding-box ;  
+ background-image:radial-gradient( circle 900px at top right  , RED,YELLOW); 
+ background-image:linear-gradient( to left , purple , transparent); 
+ background-repeat: no-repeat ;  
+  background-position: fixed ; 
+ float:  top bottom right left 
+ clear: both right left
+ overflow -(x/y):hidden scroll auto;
+   position:relative fixed sticky absolute  ;
+    top:;
+    bottom:;
+    left:;
+    right:;
+    z-index:;
+    list-style:;
+    vertical-align: ;
+   em rem vh vw in cm px calc() %
+ .name:active-hover-empty-visited-link-required-disabled-enabled-invalid-checked{ }
+ .name::selection-after-before-firstline-{ }
+ /* p{
+    height:150px;
+    width:350px;
+background-color: red;
+    position: relative;
+
+}
+p::before{
+    content:'' ;
+
+    background: bisque;
+    height:10px;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transform: skew-scale-translate(,);
+} matrix(scaleX,skewY,skewX,scaleY,translateX,translateY)
+rotate();  
+transition:all 2s ease .1s steps();
+animation-name:dx;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-timing-function:ease-in-out;
+    animation-fill-mode:both;
+ animation-play-state:paused;
+cursor:pointer;
+visibility:hidden 
+display none (delete) 
+opacity transparent;
+flex-direction:
+flex-wrap:
+flex-flow:; wrap direction
+jusify-content:
+align-items
+align-content
+flex-shrink
+flex-grow
+order
+flex-basis
+flex:grow shrink basis;
+grid-template-(column-row):100px 100px 100px = repeat(3,1fr);
+
+gap:row column;
+grid-(rows/columns):1/3
+grid-area:name;
+grid-template-areas:
+"name name name "
+" "
+" ."
+; 
+@media(min-width:px) and (max-width:px){
+body{
+}
+}
+*/
+#yo {
+    width: 400px;
+    margin: auto;
+    background: beige;
+    border: double 10px;
+    padding: 30px 94px 30px 65px;
+    box-shadow: 20px 20px 10px 3px rgb(212, 212, 212) inset, 10px 10px 25px 6px rgb(225, 86, 86);
+    text-shadow: 5px 6px 7px greenyellow;
+    word-spacing: 7px;
+    direction: rtl;
+    border-radius: 57px 18px;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.contact,
+h1 {
+    color: brown
+}
+
+
+#art {
+    color: rgb(0, 0, 0)
+}
+
+* {
+    color: midnightblue
+}
+
+section,
+strong {
+    color: rgb(94, 0, 188)
+}
+
+div>p {
+    color: rgb(0, 0, 0)
+}
+
+.list {
+    color: steelblue
+}
+
+#who {
+    border: double 50px rgb(53, 25, 25);
+    width: 291px;
+    height: 60px;
+    padding: 20px 30px 20px 30px;
+    margin: 0 auto;
+    background-color: rgb(255, 192, 110);
+    border-radius: 40px;
+    font-family: serif;
+    text-shadow: 5px 9px 12px blueviolet, -6px -9px 11px red;
+    box-shadow: 8px 7px 16px 20px rgb(176, 103, 8);
+    font-style: italic;
+}
+
+/* padding: top right bottom left;*/
+/* padding: (top -bottom) (right-left)*/
+
+#img {
+    border: double rgb(138, 122, 122);
+    width: 80px;
+    padding: 20px 20px 20px 30px;
+    margin: auto;
+    background-color: darkgrey;
+    border-radius: 20px;
+    box-shadow: 4px 5px 13px 5px rgb(94, 36, 36) inset, 6px 7px 17px 8px rgb(64, 50, 64);
+    font: italic 500 23px sans-serif;
+}
+
+#mwidth {
+    background: rgb(182, 110, 249);
+    width: 50%;
+    margin: auto;
+    min-height: 100px;
+    white-space: pre-line;
+    word-wrap: break-word;
+    font-family: Gulzar;
+    font-variant: small-caps;
+    font-weight: lighter;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: double 10px rgb(231, 127, 231);
+    box-shadow: 6px 7px 17px 8px rgb(231, 127, 231) inset, 6px 7px 17px 8px rgb(215, 72, 215);
+    text-shadow: 4px 4px 19px rgb(96, 96, 253);
+}
+
+#width {
+    background: rgb(255, 48, 48);
+    max-width: 390px;
+    margin: auto;
+    padding: 16px;
+    border-radius: 22px;
+    font: italic 700 19px/26px sans-serif;
+    box-shadow: 6px 7px 17px 8px rgb(255, 71, 71) inset, 6px 7px 17px 8px rgb(215, 72, 215);
+}
+
+#radius {
+    background: aqua;
+    border: double 14px;
+    padding: 30px;
+    width: 300px;
+    min-height: 100px;
+    border-radius: 80px 20px;
+    /* border-bottom-left-radius:80px 200px; */
+    font-family: serif;
+    margin: auto;
+    font-weight: lighter;
+
+}
+
+#exp {
+    text-align: center;
+    background: beige;
+    border: double 10px;
+    width: 62%;
+    border-radius: 80px 20px;
+    direction: rtl;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    line-height: 25px;
+    text-decoration: underline brown wavy;
+    text-shadow: 5px 6px 10px blue, -5px -6px 9px red;
+    box-shadow: 4px 11px 15px 45px rgb(255, 255, 111) inset, 4px 11px 15px 20px rgb(255, 255, 111), 2px 13px 39px 23px rgb(147, 10, 10);
+    padding: 20px;
+    margin: auto;
+    background-color: rgb(255, 251, 171);
+}
+
+body {
+    background: fixed url(https://images.ctfassets.net/nnkxuzam4k38/39sOStld2OCyNn3HmCpqco/21d339122a7cb417c83e6ebdc347ea5c/sea-edge-79ab30e2.png) no-repeat center/cover padding-box;
+
+}
+
+/* #about{
+    text-decoration: none;
+} */
+.parent {
+    /* background: red ; */
+    width: 20%;
+    height: 160px;
+    padding: 20px;
+}
+
+.parent div {
+    height: 50px;
+}
+
+.one {
+    background: tomato;
+    position: relative;
+    top: 26px;
+
+    left: px;
+    z-index: -2;
+}
+
+.two {
+    background: cyan;
+    position: relative;
+    top: 5px;
+
+    left: 10px;
+    z-index: 1;
+}
+
+.three {
+    background: gray;
+    position: relative;
+    top: -14px;
+
+    left: 14px;
+
+}
+
+.serag {
+    position: relative;
+    bottom: 1020px;
+    left: 240px;
+}
+
+.sama {
+    position: relative;
+    bottom: 880px;
+    left: 440px;
+}
+
+.yof {
+    position: relative;
+    bottom: 740px;
+    left: 640px;
+}
+
+.nig {
+    position: relative;
+    bottom: 250px;
+    left: 240px;
+}
+
+.fr {
+    position: relative;
+    bottom: 918px;
+    left: 450px;
+}
+
+.do {
+    position: relative;
+    bottom: 970px;
+
+}
+
+.as {
+    width: 990px;
+    float: left;
+}
+
+.contact {
+    position: relative;
+    top: 19px;
+    left: 15px;
+
+}
+
+.se {
+    position: relative;
+    bottom: 926px;
+    width: 990px;
+    float: left;
+}
+
+.bh {
+    width: 990px;
+    float: left;
+}
+
+.nh {
+    width: 400px;
+}
+
+.ada {
+    font-size: 4rem;
+    /*(4 x 16) 55px */
+    position: fixed;
+    bottom: 0;
+    left: 30%
+}
+
+.mi {
+    position: relative;
+    right: 999px;
+}
+
+ul {
+
+    list-style: disc inside;
+    width: 120px;
+    padding: 25px;
+    margin: 20px;
+}
+
+li {
+    background: silver;
+    width: 130px;
+}
+
+table {
+    border: double red 10px;
+    width: 400px;
+    border-spacing: 2px;
+
+}
+
+th {
+    background: rgb(255, 104, 104);
+    padding: 13px 19px;
+    border: solid red 3px;
+
+}
+
+td {
+    background: rgb(255, 176, 176);
+    padding: 13px;
+    text-align: center;
+    border: solid tomato 3px;
+}
+
+.nir {
+    position: relative;
+    left: 420px;
+    bottom: 270px;
+}
+
+.vh {
+    background: black;
+    height: 290px;
+    width: 500px;
+    position: relative;
+    bottom: 4700px;
+    left: 35%;
+    transform: translate(100px, 100px);
+    transform: scale(1.1);
+    /* transform:rotate(65deg); */
+    /* transform:skew(10deg,40deg); */
+    transform: matrix(1.3, .1, .1, 1.3, 100, 10) rotate(-4deg)
+}
+
+.vh:hover {
+    background: url(https://i.pinimg.com/originals/0f/86/1d/0f861de849f69a3225ca00140cba418a.jpg)no-repeat center/contain;
+    transition: 1s;
+}
+
+.vh:active {
+    background: url(https://www.cairo24.com/UploadCache/libfiles/86/1/600x338o/34.jpg)no-repeat center/contain;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+#radius::first-letter {
+    color: red;
+    background-color: aliceblue;
+}
+
+body::selection {
+    background-color: aliceblue;
+}
+
+p+h2 {
+    color: blue;
+}
+
+/* + next to the sibling ~ all of the siblings */
+/* p~h2 {
+    color:blue;
+} */
+/* input[type="submit"]
+ {
+    background: aqua;
+ }
+  ^= start with 
+ [href ^="ww"]{
+    background: red;
+ }
+  $= end with 
+  [href $="com"]{
+    background: red;
+ }
+   *= contains 
+  [href *="f"]{
+    background: red;
+ } 
+  ~= contains a word 
+  []i capital or small doesnt matter  */
+[href *="F" i] {
+    background: red;
+}
+
+.ser {
+    width: 100px;
+    height: 50px;
+    background: aqua;
+    transition: all 2s ease .1s;
+}
+
+.ser:hover {
+    width: 400px;
+    height: 200px;
+    background: rgb(130, 130, 255);
+}
+
+.cx {
+    width: 200px;
+    height: 150px;
+    background: red;
+    font-size: 40px;
+    padding: 70px 50px 0 50px;
+    /* animation-name:dx;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-timing-function:ease-in-out;
+    animation-fill-mode:both; */
+    animation: dx 5s linear 1s infinite alternate both running;
+}
+
+@keyframes dx {
+    0% {
+
+        background-color: red;
+        translate: 0 0;
+        rotate: 0;
+    }
+
+    25% {
+        background-color: rgb(255, 251, 0);
+        rotate: 190deg;
+
+        translate: 0 -500px;
+    }
+
+    50% {
+        background-color: rgb(26, 41, 253);
+        rotate: 380deg;
+
+        translate: 600px -500px;
+    }
+
+    75% {
+        background-color: rgb(0, 255, 106);
+        rotate: 470deg;
+
+        /* width:50%; */
+        translate: 600px 0;
+    }
+
+    100% {
+        rotate: 540deg;
+        /* width:100%; */
+        translate: 0 0;
+        background-color: aliceblue;
+    }
+}
+
+.cx:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.srr {
+    background-color: gold;
+    padding: 17px;
+    height: 300px;
+    width: 990px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+span {
+    background-color: green;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+
+
+
+}
+
+.as4 {
+    flex: 1 2 200px;
+}
+
+/* 1fr 1fr 1fr 1fr = 25% 25% 25% 25% = repeat(4,1fr)
+minmax(,)*/
+.qw {
+    background: tomato;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 100px);
+
+    gap: 15px;
+grid-template-areas:
+"head head nav "
+"side main nav"
+"side main nav"
+"foot foot foot"
+
+;
+
+}
+
+.qw div {
+    background: gold;
+}
+
+.qw .q1 {
+
+  grid-area:head;
+
+}
+
+.qw .q2 {
+
+
+  grid-area:side;
+
+
+}
+.qw .q3 {
+  
+  grid-area:main;
+
+
+
+}.qw .q4 {
+ 
+
+  grid-area:nav;
+
+
+}.qw .q5 {
+
+  grid-area:foot;
+
+
+
+}
+
+.tw {
+    background: white;
+    /* height:400px; */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    gap: 15px;
+}
+
+.tw div {
+    font-size: 34px;
+    color: white;
+    display: grid;
+    justify-content: center;
+    padding-top: 23px;
+
+}
+
+.tw .t1 {
+    background: rgb(0, 0, 255);
+    grid-column: 1/4;
+}
+
+.tw .t2 {
+    background-color: rgb(0, 255, 170);
+    grid-row: 2/4;
+    padding-top:72px;
+
+}
+
+.tw .t3 {
+    background-color: rgb(255, 255, 0);
+    grid-row: 2/4;
+    color: rgb(0, 0, 0);
+    padding-top:72px;
+
+}
+
+.tw .t4 {
+    background-color: rgb(0, 255, 170);
+    grid-row: 2/4;
+    padding-top:72px;
+}
+
+.tw .t5 {
+    background: blue;
+    grid-column: 1/4;
+}
+@media(max-width:600px)
+{ body{
+    background-image: url(https://img.freepik.com/free-vector/diamond-shape-golden-pattern-vector-background_1017-13783.jpg?semt=ais_hybrid&w=740);
+} }
+
+@media(min-width:601px) and (max-width:800px){
+  body{
+ background-image:linear-gradient( to left , purple , transparent);  } 
+}
+@media print{
+   h2{ color:red}
+}
+@media screen and (max-width:600px)
+{
+    h2{
+        color:red;
+    }
+}
+.det{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    padding:52px
+}
+.det div{
+background-color: aqua;
+height:100px;
+width:200px;
+}
+@media(max-width:600px){
+    .det{
+        flex-direction:column;
+    }
+    .det div{
+        width:90%;
+    }
+}
+@media (min-width:601px) and (max-width:920px)
+{
+    .det{
+        flex-wrap:wrap;
+    }
+    .det div {
+        width:48%;
+    }
+}

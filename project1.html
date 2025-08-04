@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <style>
+    body {
+      background-image: linear-gradient(to right, blue, aqua);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      background-color: rgb(0, 38, 255);
+      padding:20px;
+      width:80%;
+      display:flex;
+      flex-wrap:wrap;
+      gap :6px;
+    }
+
+    input {
+      background-color: rgb(0, 0, 172);
+      font-size: large;
+      border:none;
+      outline:none;
+     color:white;
+     padding:10px;
+     flex-basis:200px;
+     flex-grow:1;
+    }
+
+    input[type="submit"] {
+      background-color: rgb(63, 159, 255);
+      cursor: pointer;
+      flex-basis:30px;
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<html>
+
+
+<body>
+  <form>
+    <input name="1st-name" type="text" placeholder="first name">
+    <input name="2nd-name" type="text" placeholder="last name">
+    <input name="user-name" required type="text" placeholder="user name">
+    <input name="email" required type= "email" placeholder="email">
+    <input name="password" required type="password" placeholder="password">
+    <input type="submit" value="send">
+  </form>
+</body>
+
+</html>

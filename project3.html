@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(black, rgba(0, 0, 0, 0.695));
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        body::after {
+            content: '';
+            background-color: red;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            clip-path: circle(35% at right 70%);
+            z-index: -2;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .sad {
+            background-color: rgba(250, 235, 215, 0.074);
+            width: 80%;
+            height: 80%;
+            border-radius: 30px;
+            background-position: center;
+            padding: 30px;
+            overflow: hidden;
+        }
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+  
+    padding:20px 0;
+}
+        li {
+            list-style: none;
+            display: inline-flex;
+            margin: 0 19px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            border-bottom: solid 2px transparent;
+
+        }
+
+        a:hover {
+            color: red;
+            border-bottom-color: rgb(0, 0, 0);
+        }
+
+        .logo {
+            color: white;
+            text-transform: uppercase;
+            font-size: 30px;
+            letter-spacing: 3px;
+            font-weight: 22px;
+        }
+
+        .sa {
+height:70%;
+            color: white;
+            font-size: large;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            /* width: 80%; */
+        
+            /* top: 200px;  */
+        }
+        .sa p{padding-top: 7%;}
+
+        .text {
+
+            width: 50%;
+            line-height: 32px;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            padding-left: 50px;
+        }
+
+        .photo {
+
+            width: 40%;
+
+        }
+
+        img {
+
+            width: 400px;
+        }
+
+        h1 {
+            display: block;
+            font-size: larger;
+            padding-bottom: 20px;
+        }
+
+       
+
+         @media(min-width:750px) and (max-width:1150px) {
+            img {
+                width: 300px;
+            }
+         .sa{
+                height:90%;
+            }
+            .text{
+                transform: scale(0.9);
+                margin-bottom: 10%;
+            }
+        } 
+
+        @media (max-width:750px) {
+            .sa , nav {
+                flex-direction: column;
+                justify-content: center;
+            }
+   .sa{
+                height:100%;
+            }
+            .photo,
+            .text {
+                width: 90%;
+                transform: scale(0.8);
+            }
+            body::after{
+                clip-path: circle(40% at bottom);
+            }
+           img{
+            width:300px;
+            padding-bottom: 20%;
+           }
+        }
+    </style>
+    <title> Adidas | YousefAhmed</title>
+</head>
+<html>
+
+<body>
+
+    <div class="sad">
+    
+
+
+        <nav> <a href="a" class="logo">adidas</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li> <a href="#">Women</a></li>
+                <li><a class="#" href="a">Kids</a></li>
+            </ul>
+        </nav> 
+        <div class="sa">
+            <div class="text">
+                <h1 class="logo"> adidas EGYPT running shoes</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vitae quaerat corrupti fugit
+                    voluptates rerum earum magni sit dolorum in! Expedita consectetur quaerat deleniti fugiat culpa
+                    voluptas nemo sit amet, consectetur adipisicing elit. Id, nemo.</p>
+            </div>
+            <div class="photo"> <img src="shoes.png"></div>
+
+        </div>
+    </div>
+   
+</body>
+
+</html>
